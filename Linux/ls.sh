@@ -1,0 +1,57 @@
+Opção																	Especificação
+-a, 																		--all	Não ignora entradas começando com .
+-A, 																		--almost-all	Não lista as entradas implícitas . e ..
+--author																Com -l, emite o autor de cada arquivo
+-b, 																		--escape	Emite escapes em octal para caracteres não-gráficos
+--block-size=TAMANHO											Usa blocos de TAMANHO bytes
+-B, --ignore-backups												Não lista as entradas implícitas terminadas com ~
+-c																			Com -lt: ordena por, e mostra, ctime. Com -l: mostra o ctime e ordena por nome
+-C																		Lista as entradas em colunas
+--color[=QUANDO]													Controla se usa cores para distinguir os tipos de arquivo. QUANDO pode ser "never" (nunca), "always" (sempre) ou "auto" (automaticamente)
+-d , --directory 														Lista os diretório em vez de seu conteúdo e não interpreta ligações simbólicas
+-D, --dired																Gera a saída projetada para modo "dired" do Emacs
+-f 																			Não ordena, habilita -aU, desabilita -ls --color
+-F, --classify 															Anexa indicador (um dos */=>@|) às entradas
+--file-type																Similar, exceto que não anexa "*"
+--format=PALAVRA												"across" (-x), "commas" (-m), "horizontal" (-x), "long" (-l), "single-column" (-1), "verbose" (-l), "vertical" (-C)
+--full-time																O mesmo que -l --time-style=full-iso
+--group-directories-first											Lista os diretórios antes de listar os arquivos. Permite usar a opção --sort, mas o uso de --sort=none (-U) desabilita o agrupamento de diretórios.
+-G, --no-group														Em lista longa (-l), não emite os nomes de grupo
+-h, --human-readable												Com -l, emite os tamanhos em formato inteligível
+--si																		Similar, mas usa potências de 1000, e não de 1024
+-H, --dereference-command-line								Segue as ligações simbólicas listadas na linha de comando
+--dereference-command-line-symlink-to-dir				Segue toda ligação simbólica da linha de comando que apontar para um diretório
+--hide=PADRÃO														Não lista entradas implícitas que coincidam com o PADRÃO em sintaxe shell (ignorado quando se usa -a ou -A)
+--indicator-style=PALAVRA										Anexa o indicador de tipo no estilo PALAVRA para os nomes das entradas: "none" (nenhum, padrão), "slash" (-p), "file-type" (--file-type), "classify" (-F) "file-type" (--file-type), "classify" (-F)
+-i, --inode																Emite o número de índice de cada arquivo
+-I, --ignore=PADRÃO												Não lista as entradas implícitas que coincidam com o PADRÃO (em sintaxe shell)
+-k																			O mesmo que –block-size=1K
+-l																			Usa o formato de lista longa
+-L, --dereference													Quando mostrar informações de uma ligação simbólica, mostra as do arquivo a quem ela referencia, e não do arquivo tipo ligação em si
+-m																		Preenche toda a largura com uma lista de entradas separadas por vírgula
+-n, --numeric-uid-gid												Como -l, mas lista usuário e grupo em números ID
+-N, --literal															Emite nomes de entradas de forma crua (não trata, por exemplo, caracteres de controle de forma especial)
+-o																			Como -l, mas não lista informações sobre o grupo
+-p, --indicator-style=slash										Anexa o indicador / aos diretórios
+-q, --hide-control-chars											Emite ? ao invés de caracteres não gráficos
+--show-control-chars												Emite caracteres não gráficos como são (padrão seja um terminal)
+-Q, --quote-name													Coloca os nomes das entradas entre aspas
+--quoting-style=PALAVRA										Usa estilo de citação PALAVRA para os nomes das entradas: Palavra = literal, locale, shell, shell-always, c, escape
+-r, --reverse															Inverte a ordem de ordenação
+-R, --recursive														Lista subdiretórios recursivamente
+-s, --size																Mostra o tamanho alocado para cada arquivo, em blocos
+--sort=PALAVRA													Ordena por PALAVRA em vez de pelo nome: none -U, extension -X, size -S, time -t, version -v (nenhum, extensão, tamanho, hora, versão)
+--time=PALAVRA													Com -l, mostra a hora como PALAVRA em vez do horário de modificação: Palavra: atime -u, access -u, use -u: último acesso, ctime -c, status -c: última modificação; usa o horário especificado como chave de ordenação se --sort=time
+--time-style=ESTILO												Com -l, emite os horários usando o estilo ESTILO: FORMATO é interpretado como em "date"; se for FORMATO1, FORMATO2, FORMATO1 se aplica a arquivos não recentes, e FORMATO2 aos recentes; se ESTILO tem como prefixo "posix-", ESTILO só faz efeito fora da localidade POSIX
+-t																			Ordena pelo horário de modificação
+-T --tabsize=COL													Assume paradas de tabulação a cada COLS em vez de 8
+-u																			com -lt: ordena e exibe por data de acesso com -l: exibe o tempo de acesso e ordena por nome sem nenhum parâmetro, ordena por data de acesso
+-U																			Não ordenar; exibe as entradas na ordem do diretório
+-v																			Ordena pela ordem natural dos números de versão dentro do texto
+-w, --width=COLS													Assume a largura da tela como COLS
+-x																			Lista as entradas por linha em vez de por coluna
+-X																			Ordena por ordem alfabética das extensões das entradas
+-Z, --context															Emite qualquer contexto de segurança SELinux de cada arquivo
+-1																			Lista arquivos por linha
+--help	Exibe a ajuda
+--version	Informa a versão

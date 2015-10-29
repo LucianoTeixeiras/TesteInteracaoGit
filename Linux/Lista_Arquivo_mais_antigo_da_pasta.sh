@@ -1,0 +1,1 @@
+ls -lt | grep '^-' | awk '{print $9}' | tail -1 > lista.txt

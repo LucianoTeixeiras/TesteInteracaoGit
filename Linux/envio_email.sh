@@ -1,0 +1,1 @@
+﻿cat *.log > error.log echo "Integracao LASA" | mail -s "ERRO ROTINA INTEGRACAO LASA" suporte.portal@shoppingbrasil.com.br < error.log

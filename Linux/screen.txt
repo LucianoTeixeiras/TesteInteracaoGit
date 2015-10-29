@@ -1,0 +1,25 @@
+===============================================================================
+                        SCREEN
+
+1. Para abrir uma existente:
+        screen -r  (lista as ativas ou abre se tiver apenas uma ativa)
+        Exemplo:
+                wwd:/data3 # screen -r
+                There are several suitable screens on:
+                        23936.pts-1.wwd (Detached)
+                        32401.pts-3.wwd (Detached)
+                Type "screen [-d] -r [pid.]tty.host" to resume one of them.
+        wwd:/data3 # screen -r 32401.pts-3.wwd (para abrir)
+
+2. Para abrir uma nova com meu nome:
+        screen -S mauricio
+3. Para finalizar:
+        exit
+4. Para fechar e deixar ativa:
+        Ctrl+A+D
+       
+5. Para listar: screen -ls
+        
+        
+
+===============================================================================
